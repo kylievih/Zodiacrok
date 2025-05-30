@@ -27,7 +27,7 @@ ZodiacRok/
 │ ├── tsconfig.json # Configuração TypeScript do backend
 │ └── .env # Variáveis de ambiente
 │
-├── backend/ # Frontend mobile com React Native (Expo)
+├── backend/ # Backend Node.js + Express
 ├── src/
 │ ├── pages/ # Telas principais do app
 │ │ ├── login/ # Tela de Login
