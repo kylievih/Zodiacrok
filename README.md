@@ -1,6 +1,6 @@
 # 🌌 Zodiac'Rok
 
-Aplicativo mobile educacional, gamificado e baseado na interação dos usuários e tecnologia 4.0, desenvolvido com **React Native (Expo)** no frontend e **Mongo** no backend.
+Aplicativo mobile educacional, gamificado e baseado na interação dos usuários e tecnologia 4.0, desenvolvido com **React Native (Expo)** no frontend e **Node.js + Express + MongoDB** no backend.
 
 ---
 
@@ -11,6 +11,17 @@ ZodiacRok/
 │ └── icons/Menu/ # Ícones personalizados para o menu
 │
 ├── backend/
+├── src/
+│ ├── controllers/
+│ ├── models/
+│ ├── routes/
+│ ├── services/
+│ ├── middlewares/
+│ ├── config/
+│ └── server.ts
+├── .env
+├── package.json
+└── tsconfig.json
 │
 ├── Frontend/
 ├── src/
@@ -35,7 +46,7 @@ ZodiacRok/
 ## 🚀 Tecnologias Utilizadas
 
 - **Frontend**: React Native (Expo), TypeScript
-- **Backend**: MongoDB
+- **Backend**: Node.js + Express + MongoDB
 - **Navegação**: React Navigation
 - **Autenticação**: JWT + Middleware de autenticação
 - **Estilização**: StyleSheet customizados por tela
