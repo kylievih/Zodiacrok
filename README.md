@@ -51,7 +51,7 @@ ZodiacRok/
 - **Autenticação**: JWT + Middleware de autenticação
 - **Estilização**: StyleSheet customizados por tela
 
-🎯 Próximos passos possíveis no backend (dependendo do que já fez):
+🎯 Próximos passos possíveis no backend:
 
 | Área                     | Descrição                                                                 |
 | ------------------------ | ------------------------------------------------------------------------- |

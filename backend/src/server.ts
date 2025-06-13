@@ -1,16 +1,18 @@
-import app from "./app";
-import { connectDatabase } from "./config/database";
+import express from "express";
+import { connectToDatabase } from "./config/database";
 
+import dotenv from "dotenv";
+dotenv.config();
+
+console.log("JWT_SECRET:", process.env.JWT_SECRET);
+
+const app = express();
 const PORT = process.env.PORT || 5000;
-const MONGO_URI = process.env.MONGO_URI;
 
-if (!MONGO_URI) {
-  console.error("❌ MONGO_URI não definida no arquivo .env");
-  process.exit(1);
-}
+app.use(express.json());
 
-connectDatabase(MONGO_URI).then(() => {
-  app.listen(PORT, () => {
-    console.log(`🚀 Servidor rodando na porta ${PORT}`);
-  });
+connectToDatabase();
+
+app.listen(PORT, () => {
+  console.log(`🚀 Servidor rodando na porta ${PORT}`);
 });
